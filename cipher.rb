@@ -21,7 +21,7 @@ def make_alpha_values_hash(characters, alpha_values)
   end
 end
 
-def encrypt_message(message, alpha_values, shift)
+def caesar_cipher(message, alpha_values, shift)
   encrypted_message_array = []
   shifted_encrypted_message_array_numbers = []
   shifted_encrypted_message_array_letters = []
@@ -102,4 +102,4 @@ shift = shift + 26
 puts "shift + 26: #{shift}"
 shift = shift % 26 
 puts shift
-encrypt_message(message, alpha_values, shift)
+caesar_cipher(message, alpha_values, shift)
